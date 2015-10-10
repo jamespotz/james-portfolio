@@ -37,3 +37,15 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+#Friendly Id for URLS
+gem 'friendly_id', '~> 5.1.0'
+
+gem 'coffee-script-source', '1.8.0'
+
+#Bootstrap with SASS
+gem 'bootstrap-sass',       '3.2.0.0'
+
+group :development do 
+	gem 'puma'
+end
