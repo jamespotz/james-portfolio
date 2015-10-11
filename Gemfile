@@ -46,12 +46,11 @@ gem 'coffee-script-source', '1.8.0'
 #Bootstrap with SASS
 gem 'bootstrap-sass',       '3.2.0.0'
 
-gem 'rails_12factor', group: :production
-
 group :development do 
 end
 
 group :production do
+  	gem 'rails_12factor'
 	gem 'puma'
 end
 
