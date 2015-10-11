@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -46,6 +46,14 @@ gem 'coffee-script-source', '1.8.0'
 #Bootstrap with SASS
 gem 'bootstrap-sass',       '3.2.0.0'
 
+gem 'rails_12factor', group: :production
+
 group :development do 
 	gem 'puma'
 end
+
+group :production do
+	gem 'puma'
+end
+
+ruby "2.1.5"
