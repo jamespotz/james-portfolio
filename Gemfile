@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.18.0.pre20141117110243'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -49,11 +49,11 @@ gem 'bootstrap-sass',       '3.2.0.0'
 gem 'rails_12factor', group: :production
 
 group :development do 
-	gem 'puma'
 end
 
 group :production do
 	gem 'puma'
 end
 
+gem 'heroku'
 ruby "2.1.5"
