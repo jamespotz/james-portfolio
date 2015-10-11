@@ -1,0 +1,322 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  overflow: hidden;
+  font-size: 18px;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+.site-bg-mountain{
+  background: url("<%= asset_path('bg-mountain.jpg') %>") no-repeat 50% 50% fixed; 
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="<%= asset_path('bg-mountain.jpg') %>",sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<%= asset_path('bg-mountain.jpg') %>',sizingMethod='scale')";
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.site-bg-park{
+  color: #fff;
+  background:url("<%= asset_path('bg-rizal-park.jpg') %>") no-repeat 50% 50% fixed; 
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="<%= asset_path('bg-rizal-park.jpg') %>",sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<%= asset_path('bg-rizal-park.jpg') %>',sizingMethod='scale')";
+}
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Navigation
+ */
+.navbar{ height: 70px; }
+.navbar-default{
+  background: #1d1e20;
+  border-color:#1d1e20;
+}
+.navbar-default .navbar-brand{ color:#fff; font-weight: normal;}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{ margin-left: -25px;}
+.small-margin-top{margin-top: 10px;}
+.navbar-default .navbar-nav>li>a{color:#fff;}
+.nav>li>a{padding: 10px 25px;}
+.navbar-default .navbar-nav>li>a{ color:#536265;}
+.navbar-nav>li>a{padding-top: 15px; padding-bottom: 15px;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+  background: transparent;
+  color: #fff;
+  border: 3px solid #bc3100;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-top: 7px;
+  -webkit-animation:pulse 0.4s;
+  animation:pulse 0.4s;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+  color: #888;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+/*
+* Sprites
+*/
+.nav>li.sprites>a{padding: 7px 12px;}
+.sprites{
+  font-size: 0;
+  text-indent: -9999px;
+}
+.facebook, .twitter, .linkedin{
+  display: block;
+}
+.facebook{
+  background: url("<%= asset_path('social-net.png') %>") no-repeat 0 0;
+  width: 32px;
+  height: 32px;
+}
+.nav>li.sprites>a:hover >.facebook{background: url("<%= asset_path('social-hover.png') %>") no-repeat 0 0; -webkit-animation:pulse 0.4s;
+  animation:pulse 0.4s;}
+
+.twitter{
+  background: url("<%= asset_path('social-net.png') %>") no-repeat -50px 0;
+  width: 32px;
+  height: 32px;
+}
+.nav>li.sprites>a:hover >.twitter{background: url("<%= asset_path('social-hover.png') %>") no-repeat -50px 0; -webkit-animation:pulse 0.4s;
+  animation:pulse 0.4s;}
+
+.linkedin{
+  background: url("<%= asset_path('social-net.png') %>") no-repeat -99px 0;
+  width: 32px;
+  height: 32px;
+}
+.nav>li.sprites>a:hover >.linkedin{background: url("<%= asset_path('social-hover.png') %>") no-repeat -99px 0; -webkit-animation:pulse 0.4s;
+  animation:pulse 0.4s;}
+
+/*
+* Profile Pic
+*/
+.avatar-pic{
+  background: url("<%= asset_path('profile-pic.png') %>") no-repeat;
+  width: 94px;
+  height: 94px;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+a.navbar-brand{width: 300px;}
+.push-this{
+  margin-left: 100px;
+  text-align: left;
+  line-height: 15px;
+}
+.speciality{
+  font-size: 10px;
+  color:#536265;
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Misc 
+ */
+#content{
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+.centered { top:0; bottom:0; left:0; right:0; margin:auto; }
+
+.text-muted{
+  color: #ccc;
+}
+.mastfoot > .inner>p{
+  font-size: 12px;
+}
+.black{
+  background: #333;
+}
+.arrow-head{
+  background: url("<%= asset_path('arrow-head.png') %>") no-repeat;
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -16px;
+ /* -webkit-animation:bounce 1s infinite;
+  animation:bounce 1s infinite;*/
+}
+.arrow{
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  top:90%;
+  left: 50%;
+  margin-left: -16px;
+}
+
+/*
+ * Animation
+ */
+/*@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+
+@keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}*/
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 1140px;
+  }
+}
