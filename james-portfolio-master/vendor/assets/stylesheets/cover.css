@@ -54,24 +54,24 @@ body {
   margin-left: auto;
 }
 .site-bg-mountain{
-  background: image-url('bg-mountain.jpg') no-repeat 50% 50% fixed; 
+  background: url("/assets/bg-mountain-dfb0f2bd661021e098ad77a27c3b5a07.jpg") no-repeat 50% 50% fixed; 
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="image-url('bg-mountain.jpg')",sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image-url(bg-mountain.jpg)',sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-mountain-dfb0f2bd661021e098ad77a27c3b5a07.jpg',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-mountain-dfb0f2bd661021e098ad77a27c3b5a07.jpg',sizingMethod='scale')";
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 .site-bg-park{
   color: #fff;
-  background: image-url('bg-rizal-park.jpg') no-repeat 50% 50% fixed; 
+  background:url("/assets/bg-rizal-park-c0315f2aa21863332ec854f8c6786f7a.jpg") no-repeat 50% 50% fixed; 
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="image-url('bg-rizal-park.jpg')",sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image-url(bg-rizal-park.jpg)',sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-rizal-park-c0315f2aa21863332ec854f8c6786f7a.jpg',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-rizal-park-c0315f2aa21863332ec854f8c6786f7a.jpg',sizingMethod='scale')";
 }
 /* Padding for spacing */
 .inner {
@@ -163,34 +163,34 @@ body {
   display: block;
 }
 .facebook{
-  background: image-url('social-net.png') no-repeat 0 0;
+  background: url('/assets/social-net-b4c0bd1d755aa3f71e18e8acf116da38.png') no-repeat 0 0;
   width: 32px;
   height: 32px;
 }
-.nav>li.sprites>a:hover >.facebook{background: image-url('social-hover.png') no-repeat 0 0; -webkit-animation:pulse 0.4s;
+.nav>li.sprites>a:hover >.facebook{background: url('/assets/social-hover-2f97404eb9531f46a763119f2651d3c1.png') no-repeat 0 0; -webkit-animation:pulse 0.4s;
   animation:pulse 0.4s;}
 
 .twitter{
-  background: image-url('social-net.png')  no-repeat -50px 0;
+  background: url('/assets/social-net-b4c0bd1d755aa3f71e18e8acf116da38.png') no-repeat -50px 0;
   width: 32px;
   height: 32px;
 }
-.nav>li.sprites>a:hover >.twitter{background: image-url('social-hover.png') no-repeat -50px 0; -webkit-animation:pulse 0.4s;
+.nav>li.sprites>a:hover >.twitter{background: url('/assets/social-hover-2f97404eb9531f46a763119f2651d3c1.png') no-repeat -50px 0; -webkit-animation:pulse 0.4s;
   animation:pulse 0.4s;}
 
 .linkedin{
-  background: image-url('social-net.png')  no-repeat -99px 0;
+  background: url('/assets/social-net-b4c0bd1d755aa3f71e18e8acf116da38.png') no-repeat -99px 0;
   width: 32px;
   height: 32px;
 }
-.nav>li.sprites>a:hover >.linkedin{background: image-url('social-hover.png') no-repeat -99px 0; -webkit-animation:pulse 0.4s;
+.nav>li.sprites>a:hover >.linkedin{background: url('/assets/social-hover-2f97404eb9531f46a763119f2651d3c1.png') no-repeat -99px 0; -webkit-animation:pulse 0.4s;
   animation:pulse 0.4s;}
 
 /*
 * Profile Pic
 */
 .avatar-pic{
-  background: image-url('profile-pic.png') no-repeat;
+  background: url('/assets/profile-pic-1bd2387313d27064b42cf49410a24fc3.png') no-repeat;
   width: 94px;
   height: 94px;
   display: block;
@@ -250,7 +250,7 @@ a.navbar-brand{width: 300px;}
   background: #333;
 }
 .arrow-head{
-  background: image-url('arrow-head.png') no-repeat;
+  background: url("/assets/arrow-head-1de3027c55ce1ab45d757714ed923ce7.png") no-repeat;
   width: 32px;
   height: 32px;
   display: block;
