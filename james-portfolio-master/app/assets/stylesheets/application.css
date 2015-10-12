@@ -14,5 +14,6 @@
  *= require bootstrap
  *= require animate
  *= require jquery.circliful
+ *= require cover
  *= require_tree .
  */

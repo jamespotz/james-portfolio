@@ -10053,24 +10053,24 @@ body {
   margin-left: auto;
 }
 .site-bg-mountain{
-  background: url("/assets/bg-mountain.jpg") no-repeat 50% 50% fixed; 
+  background: url("/assets/bg-mountain-dfb0f2bd661021e098ad77a27c3b5a07.jpg") no-repeat 50% 50% fixed; 
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/assets/bg-mountain.jpg",sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-mountain.jpg',sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-mountain-dfb0f2bd661021e098ad77a27c3b5a07.jpg',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-mountain-dfb0f2bd661021e098ad77a27c3b5a07.jpg',sizingMethod='scale')";
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 .site-bg-park{
   color: #fff;
-  background:url("/assets/bg-rizal-park.jpg") no-repeat 50% 50% fixed; 
+  background:url("/assets/bg-rizal-park-c0315f2aa21863332ec854f8c6786f7a.jpg") no-repeat 50% 50% fixed; 
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/assets/bg-rizal-park.jpg",sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-rizal-park.jpg',sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-rizal-park-c0315f2aa21863332ec854f8c6786f7a.jpg',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-rizal-park-c0315f2aa21863332ec854f8c6786f7a.jpg',sizingMethod='scale')";
 }
 /* Padding for spacing */
 .inner {
@@ -10162,34 +10162,34 @@ body {
   display: block;
 }
 .facebook{
-  background: url("/assets/social-net.png") no-repeat 0 0;
+  background: url('/assets/social-net-b4c0bd1d755aa3f71e18e8acf116da38.png') no-repeat 0 0;
   width: 32px;
   height: 32px;
 }
-.nav>li.sprites>a:hover >.facebook{background: url("/assets/social-hover.png") no-repeat 0 0; -webkit-animation:pulse 0.4s;
+.nav>li.sprites>a:hover >.facebook{background: url('/assets/social-hover-2f97404eb9531f46a763119f2651d3c1.png') no-repeat 0 0; -webkit-animation:pulse 0.4s;
   animation:pulse 0.4s;}
 
 .twitter{
-  background: url("/assets/social-net.png") no-repeat -50px 0;
+  background: url('/assets/social-net-b4c0bd1d755aa3f71e18e8acf116da38.png') no-repeat -50px 0;
   width: 32px;
   height: 32px;
 }
-.nav>li.sprites>a:hover >.twitter{background: url("/assets/social-hover.png") no-repeat -50px 0; -webkit-animation:pulse 0.4s;
+.nav>li.sprites>a:hover >.twitter{background: url('/assets/social-hover-2f97404eb9531f46a763119f2651d3c1.png') no-repeat -50px 0; -webkit-animation:pulse 0.4s;
   animation:pulse 0.4s;}
 
 .linkedin{
-  background: url("/assets/social-net.png") no-repeat -99px 0;
+  background: url('/assets/social-net-b4c0bd1d755aa3f71e18e8acf116da38.png') no-repeat -99px 0;
   width: 32px;
   height: 32px;
 }
-.nav>li.sprites>a:hover >.linkedin{background: url("/assets/social-hover.png") no-repeat -99px 0; -webkit-animation:pulse 0.4s;
+.nav>li.sprites>a:hover >.linkedin{background: url('/assets/social-hover-2f97404eb9531f46a763119f2651d3c1.png') no-repeat -99px 0; -webkit-animation:pulse 0.4s;
   animation:pulse 0.4s;}
 
 /*
 * Profile Pic
 */
 .avatar-pic{
-  background: url("/assets/profile-pic.png") no-repeat;
+  background: url('/assets/profile-pic-1bd2387313d27064b42cf49410a24fc3.png') no-repeat;
   width: 94px;
   height: 94px;
   display: block;
@@ -10249,7 +10249,7 @@ a.navbar-brand{width: 300px;}
   background: #333;
 }
 .arrow-head{
-  background: url("/assets/arrow-head.png") no-repeat;
+  background: url("/assets/arrow-head-1de3027c55ce1ab45d757714ed923ce7.png") no-repeat;
   width: 32px;
   height: 32px;
   display: block;
@@ -10319,12 +10319,12 @@ a.navbar-brand{width: 300px;}
     width: 1140px;
   }
 }
-/* line 5, C:/james-portfolio/app/assets/stylesheets/home.css.scss */
+/* line 5, C:/james_files/james-portfolio-master/app/assets/stylesheets/home.css.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-/* line 9, C:/james-portfolio/app/assets/stylesheets/home.css.scss */
+/* line 9, C:/james_files/james-portfolio-master/app/assets/stylesheets/home.css.scss */
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
@@ -10332,7 +10332,7 @@ h1 {
   text-align: center;
 }
 
-/* line 16, C:/james-portfolio/app/assets/stylesheets/home.css.scss */
+/* line 16, C:/james_files/james-portfolio-master/app/assets/stylesheets/home.css.scss */
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
@@ -10342,13 +10342,13 @@ h2 {
   color: #777;
 }
 
-/* line 25, C:/james-portfolio/app/assets/stylesheets/home.css.scss */
+/* line 25, C:/james_files/james-portfolio-master/app/assets/stylesheets/home.css.scss */
 p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
 
-/* line 29, C:/james-portfolio/app/assets/stylesheets/home.css.scss */
+/* line 29, C:/james_files/james-portfolio-master/app/assets/stylesheets/home.css.scss */
 .navbar-inverse {
   background: #333;
   border-bottom: 1px solid;
@@ -10356,12 +10356,12 @@ p {
   border-radius: 0px;
 }
 
-/* line 35, C:/james-portfolio/app/assets/stylesheets/home.css.scss */
+/* line 35, C:/james_files/james-portfolio-master/app/assets/stylesheets/home.css.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: #fff;
 }
 
-/* line 38, C:/james-portfolio/app/assets/stylesheets/home.css.scss */
+/* line 38, C:/james_files/james-portfolio-master/app/assets/stylesheets/home.css.scss */
 .navbar-inverse .navbar-brand {
   color: #fff;
 }
