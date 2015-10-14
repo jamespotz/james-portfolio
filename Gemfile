@@ -5,8 +5,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
 gem 'pg', '~> 0.18.0.pre20141117110243'
+#Bootstrap with SASS
+gem 'bootstrap-sass', '~> 3.3.5'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '>= 3.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -43,8 +45,7 @@ gem 'friendly_id', '~> 5.1.0'
 
 gem 'coffee-script-source', '1.8.0'
 
-#Bootstrap with SASS
-gem 'bootstrap-sass',       '3.2.0.0'
+
 
 group :development do 
 end

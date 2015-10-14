@@ -4,7 +4,7 @@
           <div class="inner cover" >
             <h1 class="cover-heading os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.5s">Hello There!</h1>
             <p class="lead col-xs-8 col-xs-push-2 os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.8s">
-            	James Robert Rooke. Web Designer / Web Developer. Philippines
+            	James Robert Rooke. Ruby on Rails Developer. Philippines
             </p>
           </div>
 
@@ -21,9 +21,9 @@
           <div class="inner cover">
             <div class="col-xs-8">
               <h1 class="cover-heading text-left os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.5s">About Me</h1>
-              <p class="text-left text-muted os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.8s"><em>I’am a Web Designer and Coder from the beautiful country of the Philippines.</em></p>
-              <p class="text-left text-muted os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1.1s">After graduating at a State University in the Philippines i took a job in CWS as a web designer for almost a year now. I love beautiful and creative design from web, mobile apps and typhography. I am always fascinated by simple yet great design.</p>
-              <p class="text-left text-muted os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1.4s">When i’am not pushing pixels and coding, i’am hanging out with my special someone and friends or just playing computer games and doing some of the dishes.</p>
+              <p class="text-left text-muted os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.8s"><em>I’am aspiring Web Designer and Software Developer from the beautiful country of the Philippines.</em></p>
+              <p class="text-left text-muted os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1.1s">I'am currenty working at Paramount Direct using Rails as a platform. I'am also an aspiring web designer and love beautiful and creative design from web, mobile apps and typhography. I am always fascinated by simple yet great design.</p>
+              <p class="text-left text-muted os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1.4s">When i’am not pushing pixels and coding, i’am hanging out with family and friends or just playing DOTA 2 or LOL.</p>
             </div>
 
              <div class="col-xs-4">
@@ -32,8 +32,8 @@
               <div class="col-lg-2" id="CSS-Stat" data-dimension="150" data-text="75%" data-info="CSS" data-width="30" data-fontsize="28" data-percent="75" data-fgcolor="#bc3100" data-bgcolor="#536265"></div>
               </div>
               <div class="row">
-                <div class="col-xs-2" id="PS-Stat" data-dimension="150" data-text="70%" data-info="PS" data-width="30" data-fontsize="28" data-percent="70" data-fgcolor="#bc3100" data-bgcolor="#536265"></div>
-                <div class="col-xs-2" id="AI-Stat" data-dimension="150" data-text="70%" data-info="AI" data-width="30" data-fontsize="28" data-percent="70" data-fgcolor="#bc3100" data-bgcolor="#536265"></div>
+                <div class="col-xs-2" id="JS-Stat" data-dimension="150" data-text="70%" data-info="JS" data-width="30" data-fontsize="28" data-percent="70" data-fgcolor="#bc3100" data-bgcolor="#536265"></div>
+                <div class="col-xs-2" id="ROR-Stat" data-dimension="150" data-text="80%" data-info="RoR" data-width="30" data-fontsize="28" data-percent="80" data-fgcolor="#bc3100" data-bgcolor="#536265"></div>
               </div>
             </div>
           </div>
@@ -49,31 +49,20 @@
               <!-- Projects Row -->
               <div class="row os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.8s" style="margin-top:50px;">
                   <div class="col-md-4 portfolio-item">
-                      <a href="#">
-                          <img class="img-responsive" src="http://placehold.it/347x198" alt="">
+                      <a href="https://paramountdirect.com">
+                          <img class="img-responsive" src="/assets/paramountdirect.jpg" alt="Paramount Direct">
                       </a>
                       <h3>
-                          <a href="#">Project Name</a>
+                          <a href="https://paramountdirect.com" class="h2 project-link">Paramount Direct</a>
                       </h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                      <p>Paramount Direct is the direct marketing arm of Paramount Life &amp; General Insurance Corporation</p>
+                      <p>Made with Ruby on Rails, JS and Bootstrap</p>
                   </div>
                   <div class="col-md-4 portfolio-item">
-                      <a href="#">
-                          <img class="img-responsive" src="http://placehold.it/347x198" alt="">
-                      </a>
-                      <h3>
-                          <a href="#">Project Name</a>
-                      </h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                      
                   </div>
                   <div class="col-md-4 portfolio-item">
-                      <a href="#">
-                          <img class="img-responsive" src="http://placehold.it/347x198" alt="">
-                      </a>
-                      <h3>
-                          <a href="#">Project Name</a>
-                      </h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                      
                   </div>
               </div>
               <!-- /.row -->
@@ -91,18 +80,20 @@
              <div class="container">
                   <div class="row">
                     <div class="col-xs-7">
-                      <form role="form">
+                      <%= form_tag "/contact_me", method: "post", id: "contact_me" do %>
                         <div class="form-group os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.8s">
-                          <input type="password" class="form-control input-lg" id="Name" placeholder="Name">
+                          <%= text_field_tag :name, nil, placeholder: "Full Name", class: "form-control input-lg required" %>
                         </div>
                         <div class="form-group os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1.1s">
-                          <input type="email" class="form-control input-lg" id="Email" placeholder="Enter email">
+                          <%= text_field_tag :email, nil, placeholder: "Email Address", class: "form-control input-lg required validate-email" %>
                         </div>
                         <div class="form-group os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1.4s">
-                          <textarea rows="10" class="form-control" id="Message" placeholder="Message"></textarea>
+                          <%= text_area_tag :message, nil, :placeholder => "Message", rows: 10, class: "form-control required" %>
                         </div>
-                        <button type="submit" class="btn btn-lg btn-primary pull-left os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1.8s">Send <span class="glyphicon glyphicon-send"></span></button>
-                      </form>
+                        <button type="submit" id="submit-btn" class="btn btn-lg btn-primary pull-left os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1.8s">
+                        	Send
+                        </button>
+                      <% end %>
                     </div>
                     <div class="col-xs-5">
                       <img src="<%= asset_path('telephone.png') %>" alt="" width="450" height="510">
@@ -144,6 +135,12 @@
         .pace-inactive {
           display: none;
         }
+        .tooltip-inner{
+        	background: #F50000;
+        }
+        .tooltip.top .tooltip-arrow{
+        	border-top-color: #F50000;
+        }
     </style>
 <% end %>
 
@@ -156,8 +153,8 @@
          if(isScrolledIntoView($('#HTML-Stat')) && isStat1Viewed==false){
           $('#HTML-Stat').circliful();
           $('#CSS-Stat').circliful();
-          $('#PS-Stat').circliful();
-          $('#AI-Stat').circliful();
+          $('#JS-Stat').circliful();
+          $('#ROR-Stat').circliful();
           isStat1Viewed=true;}
       });
 
@@ -195,5 +192,12 @@
             onScrollInit( $('.os-animation') );
         });
 
+    </script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		initializeRequired();
+    		initializeEmailValidator();
+    		initializeSubmitValidator('#submit-btn', function() { $('#contact_me').submit(); });
+    	});
     </script>
 <% end %>

@@ -8,7 +8,7 @@ default: &default
   adapter: postgresql
   database: jamesportfolio
   username: postgres
-  password: james
+  #password: james
   host: localhost
   encoding: UTF8
   pool: 5

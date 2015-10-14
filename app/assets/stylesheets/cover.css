@@ -54,35 +54,33 @@ body {
   margin-left: auto;
 }
 .site-bg-mountain{
-  background: url("/assets/bg-mountain-dfb0f2bd661021e098ad77a27c3b5a07.jpg") no-repeat 50% 50% fixed; 
+  background: url("/assets/bg-mountain4.jpg") no-repeat 50% 50% fixed; 
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-mountain-dfb0f2bd661021e098ad77a27c3b5a07.jpg',sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-mountain-dfb0f2bd661021e098ad77a27c3b5a07.jpg',sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-mountain4.jpg',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-mountain4.jpg',sizingMethod='scale')";
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 .site-bg-park{
   color: #fff;
-  background:url("/assets/bg-rizal-park-c0315f2aa21863332ec854f8c6786f7a.jpg") no-repeat 50% 50% fixed; 
+  background:url("/assets/bg-rizal-park.jpg") no-repeat 50% 50% fixed; 
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-rizal-park-c0315f2aa21863332ec854f8c6786f7a.jpg',sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-rizal-park-c0315f2aa21863332ec854f8c6786f7a.jpg',sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-rizal-park.jpg',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg-rizal-park.jpg',sizingMethod='scale')";
 }
 /* Padding for spacing */
 .inner {
   padding: 30px;
 }
 
-
 /*
  * Navigation
  */
-.navbar{ height: 70px; }
 .navbar-default{
   background: #1d1e20;
   border-color:#1d1e20;
@@ -163,34 +161,34 @@ body {
   display: block;
 }
 .facebook{
-  background: url('/assets/social-net-b4c0bd1d755aa3f71e18e8acf116da38.png') no-repeat 0 0;
+  background: url('/assets/social-net.png') no-repeat 0 0;
   width: 32px;
   height: 32px;
 }
-.nav>li.sprites>a:hover >.facebook{background: url('/assets/social-hover-2f97404eb9531f46a763119f2651d3c1.png') no-repeat 0 0; -webkit-animation:pulse 0.4s;
+.nav>li.sprites>a:hover >.facebook{background: url('/assets/social-hover.png') no-repeat 0 0; -webkit-animation:pulse 0.4s;
   animation:pulse 0.4s;}
 
 .twitter{
-  background: url('/assets/social-net-b4c0bd1d755aa3f71e18e8acf116da38.png') no-repeat -50px 0;
+  background: url('/assets/social-net.png') no-repeat -50px 0;
   width: 32px;
   height: 32px;
 }
-.nav>li.sprites>a:hover >.twitter{background: url('/assets/social-hover-2f97404eb9531f46a763119f2651d3c1.png') no-repeat -50px 0; -webkit-animation:pulse 0.4s;
+.nav>li.sprites>a:hover >.twitter{background: url('/assets/social-hover.png') no-repeat -50px 0; -webkit-animation:pulse 0.4s;
   animation:pulse 0.4s;}
 
 .linkedin{
-  background: url('/assets/social-net-b4c0bd1d755aa3f71e18e8acf116da38.png') no-repeat -99px 0;
+  background: url('/assets/social-net.png') no-repeat -99px 0;
   width: 32px;
   height: 32px;
 }
-.nav>li.sprites>a:hover >.linkedin{background: url('/assets/social-hover-2f97404eb9531f46a763119f2651d3c1.png') no-repeat -99px 0; -webkit-animation:pulse 0.4s;
+.nav>li.sprites>a:hover >.linkedin{background: url('/assets/social-hover.png') no-repeat -99px 0; -webkit-animation:pulse 0.4s;
   animation:pulse 0.4s;}
 
 /*
 * Profile Pic
 */
 .avatar-pic{
-  background: url('/assets/profile-pic-1bd2387313d27064b42cf49410a24fc3.png') no-repeat;
+  background: url('/assets/profile-pic.png') no-repeat;
   width: 94px;
   height: 94px;
   display: block;
@@ -206,6 +204,11 @@ a.navbar-brand{width: 300px;}
 .speciality{
   font-size: 10px;
   color:#536265;
+}
+
+
+.navbar-nav{
+  background: #1d1e20;
 }
 
 /*
@@ -270,6 +273,11 @@ a.navbar-brand{width: 300px;}
   margin-left: -16px;
 }
 
+.project-link:hover{
+	color: #bc3100;
+	text-decoration: none;
+}
+
 /*
  * Animation
  */
@@ -313,6 +321,17 @@ a.navbar-brand{width: 300px;}
   }
 }
 
+@media (max-width: 768px){
+	p{
+	  	font-size: 1.4em!important;
+	  }
+	  h1{
+	  	font-size: 4em;
+	  }
+	  .inner-cover, .cover{
+	  	margin-top: 50%;
+	  }
+}
 @media (min-width: 992px) {
   .masthead,
   .mastfoot,
