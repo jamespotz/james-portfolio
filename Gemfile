@@ -51,6 +51,12 @@ gem 'unsplash'
 #for unsplash api and other api's
 gem 'httparty', '~> 0.13.7'
 
+#cache page
+gem 'actionpack-page_caching'
+
+#cache api
+gem 'api_cache', '~> 0.3.0'
+
 group :development do
 end
 

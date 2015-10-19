@@ -4,11 +4,14 @@
 
 /* Links */
 <%
+require 'rubygems'
+require 'api_cache'
+
 rand_no = 5
-photo_unparse = Unsplash::Photo.search("mountains", 1, rand_no)
+photo_unparse = APICache::Unsplash::Photo.search("mountains", 1, rand_no)
 @photo = JSON.parse photo_unparse.to_json
 
-photo_park_unparse = Unsplash::Photo.search("park", 1, rand_no)
+photo_park_unparse = APICache::Unsplash::Photo.search("park", 1, rand_no)
 @photo_park = JSON.parse photo_park_unparse.to_json
 %>
 a,
@@ -69,7 +72,7 @@ body {
   margin-left: auto;
 }
 .site-bg-mountain{
-  background: url(<%= @photo[rand(rand_no)]["attributes"]["table"]["urls"]["full"] %>) no-repeat 50% 50% fixed;
+  background: url(<%= @photo[rand(rand_no)]["attributes"]["table"]["urls"]["regular"] %>) no-repeat 50% 50% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -80,7 +83,7 @@ body {
 }
 .site-bg-park{
   color: #fff;
-  background:url(<%= @photo_park[rand(rand_no)]["attributes"]["table"]["urls"]["full"] %>) no-repeat 50% 50% fixed;
+  background:url(<%= @photo_park[rand(rand_no)]["attributes"]["table"]["urls"]["regular"] %>) no-repeat 50% 50% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
