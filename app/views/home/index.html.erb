@@ -1,5 +1,5 @@
 	<div class="site-wrapper site-bg-mountain" id="top" data-center="opacity:1" data-1000="opacity: 0.2" data-anchor-target="#top h1">
-      <div class="site-wrapper-inner" >
+      <div class="site-wrapper-inner light_overlay" >
         <div class="cover-container">
           <div class="inner cover" >
             <h1 class="cover-heading os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.5s">Hello There!</h1>
@@ -14,9 +14,8 @@
         </div>
       </div>
     </div>
-
     <div class="site-wrapper site-bg-park" id="about" data-center="opacity:1;" data-100-start="opacity:0.1;" data-100-end="opacity:0.1;" data-anchor-target="#about">
-      <div class="site-wrapper-inner" >
+      <div class="site-wrapper-inner dark_overlay" >
         <div class="cover-container">
           <div class="inner cover">
             <div class="col-xs-8">
@@ -59,10 +58,10 @@
                       <p>Made with Ruby on Rails, JS and Bootstrap</p>
                   </div>
                   <div class="col-md-4 portfolio-item">
-                      
+
                   </div>
                   <div class="col-md-4 portfolio-item">
-                      
+
                   </div>
               </div>
               <!-- /.row -->
@@ -72,7 +71,7 @@
       </div>
     </div>
 
-     <div class="site-wrapper" id="contact" data-center="opacity:1" data-100-start="background:#fff; color:#333; opacity: 0.5" data-anchor-target="#contact">      
+     <div class="site-wrapper" id="contact" data-center="opacity:1" data-100-start="background:#fff; color:#333; opacity: 0.5" data-anchor-target="#contact">
       <div class="site-wrapper-inner" >
         <div class="cover-container">
           <div class="inner cover">
@@ -149,7 +148,7 @@
       $(function(){
       var isStat1Viewed=false;
 
-      $(window).scroll(function() {   
+      $(window).scroll(function() {
          if(isScrolledIntoView($('#HTML-Stat')) && isStat1Viewed==false){
           $('#HTML-Stat').circliful();
           $('#CSS-Stat').circliful();

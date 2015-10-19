@@ -45,9 +45,13 @@ gem 'friendly_id', '~> 5.1.0'
 
 gem 'coffee-script-source', '1.8.0'
 
+#for unsplash images
+gem 'unsplash'
 
+#for unsplash api and other api's
+gem 'httparty', '~> 0.13.7'
 
-group :development do 
+group :development do
 end
 
 group :production do
