@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "jamesportfolio"
+  default from: "thepoltergeist23@gmail.com"
 
   def contact_me(name, email, message)
     @email = email
